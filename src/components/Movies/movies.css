@@ -1,0 +1,77 @@
+/* Container for the movie card */
+.movie-card {
+    display: block;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+   
+}
+
+/* Hover effect for movie card */
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.movie-card img {
+    border-radius: 8px 8px 0 0;
+   height: 300px;
+    object-fit: cover;
+}
+
+/* Title styling */
+.movie-card h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+/* Overview text (movie description) */
+.movie-overview {
+    font-size: 0.9rem;
+    color: #555;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show only 3 lines of text */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+    
+}
+
+/* Add padding and spacing around movie-card */
+.movie-card {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Make the text responsive */
+.movie-card h1,
+.movie-overview {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .movie-card img {
+        max-height: 200px;
+    }
+
+    .movie-card h1 {
+        font-size: 0.85rem;
+    }
+
+    .movie-overview {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
